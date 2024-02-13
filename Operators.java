@@ -18,10 +18,10 @@ public class Operators {
         System.out.println("Kérek másik double értéket: ");
         Double mDouble2 = scanner.nextDouble();
         System.out.println("A bekért string hozzáadása a karakterek " + egyString+karakter1+karakter2);
-        System.out.println("A bekért számok osztás: " + interger + "/" +interger2 + "=" + interger/interger2);
-        System.out.println("A bekért számok osztás: " + interger + "+" +interger2 + "=" + interger+interger2);
-        System.out.println("A bekért számok kivonás: " + interger + "-" +mDouble1 + "=" + interger/mDouble1);
-        System.out.println("A bekért számok szorzás: " + interger2 + "*" +mDouble2 + "=" + interger2*mDouble2);
-
+        System.out.println("A bekért számok osztás: " + interger + " / " +interger2 + " = B" + interger/interger2);
+        System.out.println("A bekért számok osztás: " + interger + " + " +interger2 + " = " + interger+interger2);
+        System.out.println("A bekért számok kivonás: " + interger + " - " +mDouble1 + " = " + interger/mDouble1);
+        System.out.println("A bekért számok szorzás: " + interger2 + " * " +mDouble2 + " = " + interger2*mDouble2);
+        scanner.close();
     }
 }
