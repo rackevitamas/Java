@@ -9,24 +9,18 @@ public class EnumJegyek {
         Jegyek jeles = Jegyek.JELES;
         double jegy = 1;
         Jegyek result;
-        switch (jegy) {
-            case jegy > 1 && jegy < 1.8:
-                result = elegtelen;
-                break;
-            case jegy > 1.7 && jegy < 2.6:
-                result = elegseges;
-                break;
-            case jegy > 2.5 && jegy < 3.6:
-                result = kozepes;
-                break;
-            case jegy > 3.5 && jegy < 4.6:
-                result = jo;
-                break;
-            case jegy > 4.5:
-                result = jeles;
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + jegy);
+        if (jegy >= 1 && jegy < 1.8) {
+            result = elegtelen;
+        } else if (jegy > 1.7 && jegy < 2.6) {
+            result = elegseges;
+        } else if (jegy > 2.5 && jegy < 3.6) {
+            result = kozepes;
+        } else if (jegy > 3.5 && jegy < 4.6) {
+            result = jo;
+        } else if (jegy > 4.5) {
+            result = jeles;
+        } else {
+            throw new IllegalStateException("Unexpected value: " + jegy);
         }
         System.out.println(result);
     }
