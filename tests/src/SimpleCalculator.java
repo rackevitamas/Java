@@ -22,7 +22,7 @@ public class SimpleCalculator{
 
     public static void main(String[] args) {
         SimpleCalculator sc = new SimpleCalculator();
-        int score = 92;
+        int score = 50;
         System.out.println("Score: " + score + ", Grade: " + sc.determineLetterGrade(score));
     }
 }

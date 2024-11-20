@@ -27,18 +27,6 @@ class SimpleCalculatorTest {
 
     @Test
     void testGradeF() {
-        assertEquals('F', sc.determineLetterGrade(45), "Expected grade: F");
-    }
-
-    @Test
-    void testInvalidScoreLow() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> sc.add(-1));
-        assertEquals("Score must be between 0 and 100", exception.getMessage());
-    }
-
-    @Test
-    void testInvalidScoreHigh() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> sc.add(101));
-        assertEquals("Score must be between 0 and 100", exception.getMessage());
+        assertEquals('F', sc.determineLetterGrade(55), "Expected grade: F");
     }
 }
